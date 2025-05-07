@@ -1,0 +1,9 @@
+function convertTemplate() {
+    const template = document.getElementById('templateInput').value;
+    const name = document.getElementById('name').value;
+  
+    const output = template.replace(/{{\s*name\s*}}/g, name);
+  
+    document.getElementById('output').innerText = output;
+  }
+  
